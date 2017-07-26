@@ -1,0 +1,25 @@
+{
+  "name": "just-did-it",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "css": "gulp css",
+    "setup": "gulp setup"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "copy-dir": "^0.3.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "precss": "^2.0.0"
+  }
+}

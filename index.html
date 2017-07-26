@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Just Did It</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dest/css/styles.css">
+</head>
+<body>
+
+    <a href="#" id="mod"><i id="mod-icon" class="fa fa-moon-o"></i></a>
+    <a href="#" id="settings"><i id="settings-icon" class="fa fa-cog"></i></a>
+
+    <div id="app-body" class="container">
+        <div class="offset-md-3 col-md-3"></div>
+        <div class="col-md-6" id="app">
+            <input v-model="todoText" @keyup.enter="addTodo" type="text" placeholder="Press Enter to add." class="form-control" />
+            <p id="count"> {{ charCount }} </p>
+
+            <div id="todos" class="list-group">
+                <button type="button" class="list-group-item todo-item" v-for="todo in todos" @click="check(todo)">
+                    <span class="todo-text">{{ todo.text }}</span>
+                    <span v-show="todo.done" class="badge done">Done</span>
+                </button>
+            </div>
+        </div>
+        <div class="offset-md-3 col-md-3"></div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dest/js/vue.js"></script>
+    <script src="dest/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+$black: #000000;
+$white: #ffffff;
+$error_red: #ff3535;
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#mod, #settings {
+    font-size: 20px;
+}
+
+#mod-icon, #settings-icon {
+    padding: 10px;
+}
+
+#app-body {
+    padding: 60px;
+}
+
+#count {
+    margin-top: 5px;
+}
+
+#count.day.ok {
+    color: $black;
+}
+
+#count.night.ok {
+    color: $white;
+}
+
+#count.day.error, #count.night.error {
+    color: $error_red;
+}
+
+#todos {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.todo-item {
+    outline: none;
+    background-color: #afafaf;
+    color: $black;
+    border: 0;
+}
+
+#settings {
+    float: right;
+}
+
+input.form-control,input.form-control:focus {
+    box-shadow: none;
+    transition: none;
+}
