@@ -10,14 +10,22 @@ App uses [Yarn package manager](https://yarnpkg.com/lang/en/).
 
 ### Setting up `dest` directory
 
+This command will make new `dest` directory and compile CSS and CoffeeScript files from `src` directory.
+
 ```sh
 yarn run setup
 ```
 
-### Compiling CSS
+### Compiling CSS separately
 
 ```sh
 yarn run css
+```
+
+### Compiling CoffeeScript separately
+
+```sh
+yarn run coffee
 ```
 
 ## Usage
